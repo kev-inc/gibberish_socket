@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <form>
+      <input type="text" name='username' id='username' placeholder='username' required />
+      <input type="text" name='roomId' id='roomId' placeholder='room ID' required />
+      <button type='submit'>Join</button>
+    </form>
+
+    <div>
+      room id: 
+      <span id="room_id"></span>
+    </div>
+
+    <div>
+      username: 
+      <span id="nickname"></span>
+    </div>
+
+    <div>
+      users:
+      <span id="userList"></span>
+    </div>
+
+    <div>
+      game state:
+      <span id="game_state"></span>
+    </div>
+
+    <div>
+      timer:
+      <span id="timer"></span>
+    </div>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
